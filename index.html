@@ -28,8 +28,8 @@
   
       <!-- Right Button -->
       <div>
-        <button class="flex justify-center items-center px-4 py-2 gap-1 bg-slate-50 text-black font-bold rounded-md">
-          <img src="./images/coin.png" alt="" class="w-5 h-5"> <span id="balance">5000</span>
+        <button class="flex justify-center items-center px-2 py-2 gap-1 bg-slate-50 text-black font-bold rounded-md">
+          <img src="./images/coin.png" alt="" class="w-5 h-5"> <span id="balance">10000</span>
         </button>
       </div>
     </nav>
@@ -43,22 +43,22 @@
   
        
       <main>
-         <!-- section donate for noakhali -->
+         <!-- section donate for Noakhali -->
 
         <section id="section-donation" class=" ">
           <div class="lg:flex items-center justify-between p-5">
             <div class="flex-1"><img src="./images/noakhali.png" alt=""></div>
             <div class="flex-1  lg:pr-10">
                 <div class="flex flex-col items-start gap-y-5">
-                <button class="flex justify-center items-center px-4 py-2 gap-1 bg-gray-200 text-black font-bold rounded-md ">
-                    <img src="./images/coin.png" alt="" class="w-5 h-5"> <span id="noakhali-donation-balance">6000</span>
+                <button class="flex justify-center items-center mt-5 px-4 py-2 gap-1 bg-gray-200 text-black font-bold rounded-md ">
+                    <img src="./images/coin.png" alt="" class="w-5 h-5"> <p><span id="noakhali-donation-balance">6000</span>&nbspBDT</p>
                    </button>
                 <h2 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
                 <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
                 <input id="input-donation" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
 
-                <!-- Open the modal using ID.showModal() method -->
+                <!--  Modal -->
                 <button id="btn-donate-now" class="btn px-4 py-2 bg-lime-400 w-full text-black font-bold rounded-md" >Donate Now</button>
                 <dialog id="my_modal_1" class=" modal">
                 <div class="modal-box flex flex-col items-center">
@@ -85,15 +85,15 @@
             <div class="flex-1"><img src="./images/feni.png" alt=""></div>
             <div class="flex-1  lg:pr-10">
                 <div class="flex flex-col items-start gap-y-5">
-                <button class="flex justify-center items-center px-4 py-2 gap-1 bg-gray-200 text-black font-bold rounded-md ">
-                    <img src="./images/coin.png" alt="" class="w-5 h-5"> <span id="feni-donation-balance">7000</span>
+                <button class="flex justify-center items-center mt-5 px-4 py-2 gap-1 bg-gray-200 text-black font-bold rounded-md ">
+                    <img src="./images/coin.png" alt="" class="w-5 h-5"> <p><span id="feni-donation-balance">7000</span>&nbspBDT</p>
                    </button>
                 <h2 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
                 <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
 
                 <input id="feni-input-donation" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
 
-                <!-- Open the modal using ID.showModal() method -->
+                <!-- Modal -->
                 <button id="btn-donate-feni" class="btn px-4 py-2 bg-lime-400 w-full text-black font-bold rounded-md" >Donate Now</button>
                 <dialog id="my_modal_1" class=" modal">
                 <div class="modal-box flex flex-col items-center">
@@ -115,20 +115,19 @@
         
         <!-- Aid for Injured in the Quota Movement -->
 
-      
           <div id="section-donation-quota" class="lg:flex items-center justify-between p-5">
             <div class="flex-1"><img src="./images/quota-protest.png" alt=""></div>
             <div class="flex-1  lg:pr-10">
                 <div class="flex flex-col items-start gap-y-5">
-                <button class="flex justify-center items-center px-4 py-2 gap-1 bg-gray-200 text-black font-bold rounded-md ">
-                    <img src="./images/coin.png" alt="" class="w-5 h-5"> <span id="quota-donation-balance">8000</span>
+                <button class="flex justify-center items-center mt-5 px-4 py-2 gap-1 bg-gray-200 text-black font-bold rounded-md ">
+                    <img src="./images/coin.png" alt="" class="w-5 h-5"> <p><span id="quota-donation-balance">8000</span>&nbspBDT</p>
                    </button>
                 <h2 class="text-xl font-bold">Aid for Injured in the Quota Movement</h2>
                 <p> he recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
 
                 <input id="input-donation-quota" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
 
-                <!-- Open the modal using ID.showModal() method -->
+                <!-- Modal -->
                 <button id="btn-donate-quota" class="btn px-4 py-2 bg-lime-400 w-full text-black font-bold rounded-md" >Donate Now</button>
                 <dialog id="my_modal_1" class=" modal">
                 <div class="modal-box flex flex-col items-center">
@@ -149,51 +148,24 @@
           </div>
         </section>
 
-        <!-- Section Blog content -->
-
-        <section id="section-blog" class="hidden">
-          <div class="collapse collapse-arrow bg-base-200">
-              <input type="radio" name="my-accordion-2" checked="checked" />
-              <div class="collapse-title text-xl font-medium">96500 Taka is Donated for famine-2024 at Feni, Bangladesh
-                </div>
-              <div class="collapse-content">
-                <p>hello</p>
-              </div>
-            </div>
-            <div class="collapse collapse-arrow bg-base-200">
-              <input type="radio" name="my-accordion-2" />
-              <div class="collapse-title text-xl font-medium">6500 Taka is Donated for Flood Relief in Feni,Bangladesh
-                </div>
-              <div class="collapse-content">
-                <p>hello</p>
-              </div>
-            </div>
-            <div class="collapse collapse-arrow bg-base-200">
-              <input type="radio" name="my-accordion-2" />
-              <div class="collapse-title text-xl font-medium">15500 Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh
-              </div>
-              <div class="collapse-content">
-                <p>hello</p>
-              </div>
-            </div>
             <!-- About Donate History -->
-      </section>
       
-      <section class="">
-        <div id="history" class="hidden w-4/5 rounded-md p-4 m-4 border-2">
-      <p></p>
+      <section>
+        <div id="history" class="hidden">
+      
         </div>
       </section>
         
       </main>
       
-
-
-
-      <footer class="bg-[#f7f5ed] py-10"></footer>
+      <!-- Footer -->
+      <footer class="bg-[#f7f5ed] py-10">
+        <div class="flex justify-center items-center">
+          <p>© 2024 Donate Bangladesh. All Rights Reserved.</p>
+        </div>
+      </footer>
       <script src="./JS/features.js"></script>
       <script src="./JS/index.js"></script>
-      <script src="./JS/timezone.js"></script>
       
 </body>
 

@@ -10,3 +10,12 @@ function getTextValueById(id){
     
     return balanceValue;
 }
+
+// Function to toggle button styles
+function toggleButtonStyles(activeButton, inactiveButton) {
+    activeButton.classList.remove('bg-slate-50', 'border-2');
+    activeButton.classList.add('bg-lime-400');
+
+    inactiveButton.classList.remove('bg-lime-400');
+    inactiveButton.classList.add('bg-slate-50', 'border-2');
+}
