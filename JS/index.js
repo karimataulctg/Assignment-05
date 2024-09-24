@@ -45,6 +45,46 @@ document.getElementById('btn-donate-now').addEventListener('click', function(){
 
   }
 })
+// button Donate for feni
+document.getElementById('btn-donate-feni').addEventListener('click', function(){
+   const inputValue = getValueById('feni-input-donation');
+   const valueTotal = getTextValueById('balance');
+   
+   if(valueTotal < inputValue){
+       alert('Insufficient balance');
+       return;
+   }
+  else if(isNaN(inputValue) || inputValue <= 0){
+       alert('Please enter a valid amount');
+       return;
+   }
+  else {
+    
+   const newBalance = valueTotal - inputValue;
+   document.getElementById('balance').innerText = newBalance;
+
+   const noakhaliBalance = getTextValueById('feni-donation-balance');
+   const noakhaliNewBalance = noakhaliBalance + inputValue;
+   document.getElementById('feni-donation-balance').innerText = noakhaliNewBalance;
+
+    // document.getElementById('my_modal_1').classList.remove('hidden');
+    document.getElementById('my_modal_1').showModal();
+
+    const p = document.createElement('p');
+            p.innerText = `
+             ${inputValue} Taka is donated for flood at Feni, Bangladesh.
+            `;
+            document.getElementById('history').appendChild(p);
+            
+            const fullDateTime = new Date().toLocaleString();
+
+        // Create a new <p> tag for the date and time
+        const dateTimeParagraph = document.createElement('p');
+        dateTimeParagraph.innerText = `${fullDateTime}`;
+        document.getElementById('history').appendChild(dateTimeParagraph);
+
+  }
+})
 
 
 
