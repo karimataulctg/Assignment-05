@@ -28,7 +28,7 @@ document.getElementById('btn-donate-now').addEventListener('click', function(){
         const resultDiv = document.getElementById('history');
         resultDiv.innerHTML += `
             <div class=" w-4/5 rounded-md p-4 m-4 border-2"> 
-            ${inputValue} Taka is donated for Aid for Injured in the Quota Movement.
+            ${inputValue} Taka is donated for Donate for Flood at Noakhali, Bangladesh.
             <p>${fullDateTime}</p>
             </div>
         `;
@@ -63,7 +63,7 @@ document.getElementById('btn-donate-feni').addEventListener('click', function(){
         const resultDiv = document.getElementById('history');
         resultDiv.innerHTML += `
             <div class=" w-4/5 rounded-md p-4 m-4 border-2"> 
-            ${inputValue} Taka is donated for Aid for Injured in the Quota Movement.
+            ${inputValue} Taka is donated for Donate for Flood Relief in Feni, Bangladesh.
             <p>${fullDateTime}</p>
             </div>
         `;
